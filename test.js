@@ -51,7 +51,6 @@ describe('desync', function() {
     }
   })
 
-
   it('should run cb asynchronously', function(done) {
     var cb = chai.spy(done)
       , fnAsync = desync(function(){}, cb)
