@@ -7,8 +7,12 @@ function desync(fn) {
     try {
       ret = fn.apply(null, args)
     } catch (err) {
-      return cb(err)
+      return nextTick(function() { cb(err) })
     }
-    return cb(null, ret)
+    return nextTick(function() { cb(null, ret) })
   }
 }
+
+var nextTick = (typeof process != 'undefined' && typeof process.nextTick == 'function')
+             ? process.nextTick
+             : require('next-tick')
