@@ -2,23 +2,21 @@
   "name": "desync",
   "version": "1.0.0",
   "description": "wrap a synchronous function in an async one",
-  "main": "desync.js",
-  "scripts": {
-    "test": "mocha -R spec"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/nathan7/desync.git"
-  },
-  "keywords": [
-    "async",
-    "utility"
-  ],
+  "keywords": [ "async", "utility" ],
   "author": "Nathan Zadoks",
   "license": "MIT",
+  "main": "desync.js",
+  "repository": { "type": "git", "url": "git://github.com/nathan7/desync.git" },
+  "dependencies": {
+
+  },
   "devDependencies": {
     "mocha": "~1.8.1",
     "chai": "~1.5.0",
     "chai-spies": "~0.5.1"
-  }
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "readmeFilename": "Readme.md"
 }
