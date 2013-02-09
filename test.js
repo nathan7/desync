@@ -58,4 +58,12 @@ describe('desync', function() {
     fnAsync(cb)
     cb.should.not.have.been.called()
   })
+
+  it('should run cb asynchronously in case of an error', function(done) {
+    var cb = chai.spy(function() { done() })
+      , fnAsync = desync(function(){ throw new Error('err') }, cb)
+
+    fnAsync(cb)
+    cb.should.not.have.been.called()
+  })
 })
