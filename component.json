@@ -5,7 +5,7 @@
   "keywords": [ "async", "utility" ],
 
   "license": "MIT",
-  "scripts": [ "index.js" ]
+  "scripts": [ "desync.js" ],
   "repo": "nathan7/desync",
   "dependencies": {
     "timoxley/next-tick": "*"
