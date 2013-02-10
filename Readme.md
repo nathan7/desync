@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nathan7/desync.png)](https://travis-ci.org/nathan7/desync)
+
 # desync
 
   wrap an synchronous function in an async one
